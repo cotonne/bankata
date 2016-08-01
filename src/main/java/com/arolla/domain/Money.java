@@ -48,4 +48,12 @@ public class Money {
 		return new Money(-value, currency);
 	}
 
+	public boolean isNegative() {
+		return value < 0;
+	}
+
+	public boolean isStriclyLessThan(Money amount) {
+		return value < amount.value;
+	}
+
 }

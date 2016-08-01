@@ -1,11 +1,10 @@
 package com.arolla.domain;
 
-public class Deposit implements Movement {
 
-	private final Money amount;
+public class Deposit extends Movement {
 
 	public Deposit(Money amount) {
-		this.amount = amount;
+		super(amount);
 	}
 
 	public Money getAmount() {
